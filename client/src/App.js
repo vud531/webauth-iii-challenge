@@ -12,8 +12,9 @@ class App extends React.Component {
       loggedIn: false
     }
 
-    updateStatus() {
-      this.setState({ loggedIn: true })
+    updateStatus = () => {
+      // this.setState({ loggedIn: true })
+      this.setState({ loggedIn: true });
     }
 
     logout() {
@@ -30,7 +31,7 @@ class App extends React.Component {
             <NavLink to="/users">Users</NavLink>:
             <NavLink to="/login">Login</NavLink>
           }
-                    &nbsp;|&nbsp;
+          &nbsp;|&nbsp;
 
           {
             this.state.loggedIn ?
